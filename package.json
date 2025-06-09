@@ -1,0 +1,26 @@
+{
+  "name": "future-tell",
+  "version": "1.0.0",
+  "description": "基于生辰八字和紫薇斗数的命理解析网页应用程序",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["命理", "八字", "紫薇斗数", "占卜"],
+  "author": "FutureTell Team",
+  "license": "MIT"
+}
